@@ -1,0 +1,7 @@
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\bin\Debug\Static and Instance Method.exe.config
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\bin\Debug\Static and Instance Method.exe
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\bin\Debug\Static and Instance Method.pdb
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\obj\Debug\Static and Instance Method.csproj.AssemblyReference.cache
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\obj\Debug\Static and Instance Method.csproj.CoreCompileInputs.cache
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\obj\Debug\Static and Instance Method.exe
+D:\Infinite Assignment\Static and Instance Method\Static and Instance Method\obj\Debug\Static and Instance Method.pdb
