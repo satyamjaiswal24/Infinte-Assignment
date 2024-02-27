@@ -1,0 +1,7 @@
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\bin\Debug\DAY 4.exe.config
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\bin\Debug\DAY 4.exe
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\bin\Debug\DAY 4.pdb
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\obj\Debug\DAY 4.csproj.AssemblyReference.cache
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\obj\Debug\DAY 4.csproj.CoreCompileInputs.cache
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\obj\Debug\DAY 4.exe
+C:\Users\satyamj\source\repos\DAY 4\DAY 4\obj\Debug\DAY 4.pdb
