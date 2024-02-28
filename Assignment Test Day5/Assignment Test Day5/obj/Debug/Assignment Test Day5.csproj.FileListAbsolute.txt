@@ -1,0 +1,6 @@
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\obj\Debug\Assignment Test Day5.csproj.CoreCompileInputs.cache
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\bin\Debug\Assignment Test Day5.exe.config
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\bin\Debug\Assignment Test Day5.exe
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\bin\Debug\Assignment Test Day5.pdb
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\obj\Debug\Assignment Test Day5.exe
+D:\Assignment Day 5\Assignment Test Day5\Assignment Test Day5\obj\Debug\Assignment Test Day5.pdb
