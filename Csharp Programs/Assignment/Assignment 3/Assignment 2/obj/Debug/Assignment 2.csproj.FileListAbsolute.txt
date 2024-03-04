@@ -1,0 +1,6 @@
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\obj\Debug\Assignment 2.csproj.CoreCompileInputs.cache
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\bin\Debug\Assignment 2.exe.config
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\bin\Debug\Assignment 2.exe
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\bin\Debug\Assignment 2.pdb
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\obj\Debug\Assignment 2.exe
+D:\Infinite Assignment\Csharp Assessment\Assignment 3\Assessment 3\obj\Debug\Assignment 2.pdb

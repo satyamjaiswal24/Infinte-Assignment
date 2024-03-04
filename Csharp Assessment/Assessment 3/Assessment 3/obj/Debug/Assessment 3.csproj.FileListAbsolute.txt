@@ -1,6 +1,0 @@
-D:\Infinite Assignment\Assessment 3\Assessment 3\obj\Debug\Assessment 3.csproj.CoreCompileInputs.cache
-D:\Infinite Assignment\Assessment 3\Assessment 3\bin\Debug\Assessment 3.exe.config
-D:\Infinite Assignment\Assessment 3\Assessment 3\bin\Debug\Assessment 3.exe
-D:\Infinite Assignment\Assessment 3\Assessment 3\bin\Debug\Assessment 3.pdb
-D:\Infinite Assignment\Assessment 3\Assessment 3\obj\Debug\Assessment 3.exe
-D:\Infinite Assignment\Assessment 3\Assessment 3\obj\Debug\Assessment 3.pdb
