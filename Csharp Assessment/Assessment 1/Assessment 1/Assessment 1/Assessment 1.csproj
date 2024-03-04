@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{87B83A09-E77E-4AC3-BF09-D22DB617E24B}</ProjectGuid>
+    <ProjectGuid>{6D358D2B-3664-4F27-9AF7-8B806C2FA53C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Static_and_Instance_Method</RootNamespace>
-    <AssemblyName>Static and Instance Method</AssemblyName>
+    <RootNamespace>Assessment_1</RootNamespace>
+    <AssemblyName>Assessment 1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="InstanceAndStatic.cs" />
+    <Compile Include="If_ElseAndSwitch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Assessment_1
 {
-	class Program
-	{
+    class If_ElseAndSwitch
+    {
 		static void Main(string[] args)
 		{
 			//if_else_statement();
+			If_ElseAndSwitch p = new If_ElseAndSwitch();
+			p.swap(10, 20); //Instance Method
+			even_or_odd(10);//Static Method
 			switch_statement();
 			Console.Read();
 		}
@@ -85,6 +88,30 @@ namespace ConsoleApp1
 					break;
 
 			}
+		}
+
+	
+
+		void swap(int a, int b)
+		{
+			a = a + b;
+			b = a - b;
+			a = a - b;
+
+			Console.WriteLine($"a : {a} and b : {b}");
+		}
+
+		static void even_or_odd(int a)
+		{
+			if (a % 2 == 0)
+			{
+				Console.WriteLine("Even");
+			}
+			else
+			{
+				Console.WriteLine("Odd");
+			}
+
 		}
 	}
 }

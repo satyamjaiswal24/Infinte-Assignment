@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Static_and_Instance_Method
+namespace Assessment_1
 {
-    class Program
+    class InstanceAndStatic
     {
         static void Main(string[] args)
         {
-            Program p = new Program();
-            p.swap(10, 20); //Instance Method
+            InstanceAndStatic i = new InstanceAndStatic();
+            i.swap(10, 20); //Instance Method
             even_or_odd(10);//Static Method
             Console.Read();
         }
