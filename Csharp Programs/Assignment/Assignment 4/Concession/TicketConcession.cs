@@ -32,7 +32,7 @@ namespace Concession
             }
             else if(age >=60)
             {
-                float discount_money = (totalFlare * 30) / 100;
+                float discount_money = totalFlare -((totalFlare * 30) / 100);
                 Console.WriteLine($"Name: {name} and Age: {age}");
                 Console.WriteLine($"Senior Citizen, Price with discount: {discount_money}rs");
             }
