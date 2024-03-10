@@ -10,12 +10,22 @@ namespace Concession
     {
         private const int totalFlare = 500;
 
-        public int age { get; set; }
-        public string name { get; set; }
+        private int age;
+        private string name;
+
+        public TicketConcession(int age, string name)
+        {
+            this.age = age;
+            this.name = name;
+        }
 
         public void CalculateConcession()
         {
-            if (age <= 5)
+            if(age < 0)
+            {
+                Console.WriteLine("Please give valid age input");
+            }
+            else if (age <= 5)
             {
                 Console.WriteLine($"Name: {name} and Age: {age}");
                 Console.WriteLine("Little Champs - Free Ticket ");

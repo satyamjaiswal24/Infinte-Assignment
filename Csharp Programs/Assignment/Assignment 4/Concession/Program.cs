@@ -15,9 +15,7 @@ namespace Concession
             Console.Write("Enter the Your Age: ");
             int age = int.Parse(Console.ReadLine());
 
-            TicketConcession tc = new TicketConcession();
-            tc.name = name;
-            tc.age = age;
+            TicketConcession tc = new TicketConcession(age,name);
             tc.CalculateConcession();
             Console.ReadKey();
         }
