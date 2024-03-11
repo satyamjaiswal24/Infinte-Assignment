@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Concession
 {
-    class TicketConcession
+    public class TicketConcession
     {
         private const int totalFlare = 500;
 
@@ -21,7 +21,7 @@ namespace Concession
 
         public void CalculateConcession()
         {
-            if(age < 0)
+            if (age < 0)
             {
                 Console.WriteLine("Please give valid age input");
             }
@@ -30,9 +30,9 @@ namespace Concession
                 Console.WriteLine($"Name: {name} and Age: {age}");
                 Console.WriteLine("Little Champs - Free Ticket ");
             }
-            else if(age >=60)
+            else if (age >= 60)
             {
-                float discount_money = totalFlare -((totalFlare * 30) / 100);
+                float discount_money = totalFlare - ((totalFlare * 30) / 100);
                 Console.WriteLine($"Name: {name} and Age: {age}");
                 Console.WriteLine($"Senior Citizen, Price with discount: {discount_money}rs");
             }
