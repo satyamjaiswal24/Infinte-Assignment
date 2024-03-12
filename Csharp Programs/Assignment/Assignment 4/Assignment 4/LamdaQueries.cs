@@ -16,7 +16,7 @@ namespace Assignment_4
             Console.WriteLine("-------------------- Return Word ------------------------");
             returnWord();
             Console.WriteLine("-------------------- Square Function ------------------------");
-            //square();
+            square();
             Console.ReadKey();
         }
         static void returnWord()
