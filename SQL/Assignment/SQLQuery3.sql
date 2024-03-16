@@ -1,13 +1,16 @@
+--Creating IT_Firm Database
 create database IT_Firm
 
 use IT_Firm
 
+--Creating Client Table
 create table clients(
 Client_id int primary key , Cname varchar(40) not null,
 Address varchar(30),Email varchar(30) unique, 
 Phone Bigint, Buisness varchar(20) not null
 );
 
+--Inserting Data into Client Table
 insert into clients values
 (1001, 'ACME Utilities', 'Noida', 'contact@acmeutil.com', 9567880032, 'Manufacturing'),
 (1002, 'Trackon Consultants', 'Mumbai', 'consult@trackon.com', 8734210090, 'Consultant'),
@@ -16,16 +19,21 @@ insert into clients values
 
 select * from clients
 
+--Creating Employees Table
+
 create table Employees(
 Empno int primary key,
 Ename varchar(20) not null,
 Job varchar(15), Salary int check (Salary > 0),
 )
 
+--Adding Deptno Column in Employees
 alter table Employees
 add Deptno int
 
 select * from Employees
+
+--Inserting Data into Employees Table
 insert into Employees values
 (7001, 'Sandeep', 'Analyst', 25000, 10),
 (7002, 'Rajesh', 'Designer', 30000, 10),
@@ -39,11 +47,16 @@ insert into Employees values
 (7010, 'Smita', 'Analyst', 20000, 10),
 (7011, 'Anand', 'Project Mgr', 65000, 10);
 
+
+--Creating Department Table
+
 create table Departments (
     Deptno int PRIMARY KEY,
     Dname varchar(15) NOT NULL,
     Loc varchar(20)
 )
+
+--Inserting Data into Departments Table
 
 insert into Departments values
 (10, 'Design', 'Pune'),
@@ -53,6 +66,7 @@ insert into Departments values
 
 select * from Departments
 
+--Creating Project Table
 create table Projects (
     Project_ID int primary key,
     Descr varchar(30) not null,
@@ -64,6 +78,7 @@ create table Projects (
 	check (Actual_End_Date > Planned_End_Date)
 )
 
+--Inserting Data into Projects Table
 insert into Projects values
 (401, 'Inventory', '2011-04-01', '2011-10-01', '2011-10-31', 150000, 1001),
 (402, 'Accounting', '2011-08-01', '2012-01-01', NULL, 500000, 1002),
@@ -72,6 +87,7 @@ insert into Projects values
 
 select * from Projects
 
+--Creating EmpProjectTasks Table
 create table EmpProjectTasks (
     Project_id int,	
     Empno int ,
@@ -84,6 +100,7 @@ create table EmpProjectTasks (
 	foreign key(Empno) references Employees(Empno)
 )
 
+--Inserting Data into EmpProjectTasks Table
 insert into EmpProjectTasks values
 (401, 7001, '2011-04-01', '2011-04-20', 'System Analysis', 'Completed'),
 (401, 7002, '2011-04-21', '2011-05-30', 'System Design', 'Completed'),
