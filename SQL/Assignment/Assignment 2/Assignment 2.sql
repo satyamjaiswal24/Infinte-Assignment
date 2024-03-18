@@ -103,6 +103,7 @@ select (Salary * 12) as Yearly_Salary from Emp where Ename = 'SMITH'
 select Ename , Salary from Emp where Salary not between 1500 and 2850
 
 --15. Find all managers who have more than 2 employees reporting to them
-select Mgr_id from Emp where Job = 'MANAGER' group by Mgr_id 
-having count(*) > 2
-
+select  Mgr_id, count(Empno) as EMP_COUNT
+from Emp
+group by Mgr_id
+having count(Empno) > 2;
