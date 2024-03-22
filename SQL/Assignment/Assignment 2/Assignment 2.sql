@@ -13,7 +13,7 @@ create table Emp(
    Comm int,
    Deptno int
 )
-
+truncate table Emp
 --Inserting Data into Employee Table
 insert into Emp values
 (7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800, NULL, 20),
@@ -107,3 +107,5 @@ select  Mgr_id, count(Empno) as EMP_COUNT
 from Emp
 group by Mgr_id
 having count(Empno) > 2;
+
+

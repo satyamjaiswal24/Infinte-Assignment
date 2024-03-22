@@ -15,13 +15,13 @@ namespace Assessment_3
     {
         static void Main(string[] args)
         {
-            string fileName = @"myfile.txt";
+            string fileName = @"myfile1.txt";
             bool fileExists = File.Exists(fileName);
 
             Console.WriteLine("\nAppend some text to an existing file:\n");
             Console.WriteLine("--------------------------------------------\n");
 
-            FileWriter(fileName, "Hello Welcome to my File", fileExists);
+            FileWriter(fileName, "Adding Some more Data", fileExists);
             ReadAndPrintFileContent(fileName);
             Console.ReadKey();
         }
