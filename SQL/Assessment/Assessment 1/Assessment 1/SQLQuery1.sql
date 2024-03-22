@@ -74,6 +74,12 @@ create table Orders (
   amount int
 )
 
+insert into Orders values
+(102, '2009-10-08 00:00:00', 3, 3000),
+(100, '2009-10-08 00:00:00', 3, 1500),
+(101, '2009-11-20 00:00:00', 2, 1560),
+(103, '2008-05-20 00:00:00', 4, 2060);
+
 create table Employee (
   id int primary key,
   name varchar(25),
