@@ -63,25 +63,19 @@ instead of delete, insert, update
 as
 begin
   declare @holiday_date date
-  declare @holiday_name nvarchar(25)
-  declare @holiday_count int
+  declare @holiday_name varchar(25)
+  --set @holiday_date = (select holiday_date from holiday where convert(date,getdate()) = holiday_date)
+  --if @holiday_date is not 
+  set @holiday_date = convert(date, getdate())
+  select @holiday_name = holiday_name from holiday
+  where holiday_date = @holiday_date
 
-  -- Check if today's date exists in the Holiday table
-  select top 1 @holiday_date = holiday_date, @holiday_name = holiday_name
-  from holiday
-  where holiday_date = convert(date, getdate()) -- use getdate() for current date
-
-  --counting if any holiday matches with current date then
-  select @holiday_count = count(*) from holiday
-  where holiday_date = convert(date, getdate())
-
-  -- If a holiday is found, raise an error message
-  if (@holiday_count > 0)
+  if @holiday_name is not null
   begin
     raiserror ('Due to %s you cannot manipulate data',16,1, @holiday_name)
   end
 end
-
+  
 select * from emp
 insert into emp
 values (1001, 'John Doe', 'Manager', 5000,'2024-03-25',6000,null,10)
