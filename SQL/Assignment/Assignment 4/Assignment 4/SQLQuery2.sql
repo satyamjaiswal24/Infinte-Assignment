@@ -8,7 +8,7 @@ begin
 	declare @fact int =1
 
 	print 'Factorial of '+cast(@n as varchar(10))+' is: '
-	while @n >		0
+	while @n >	1
 		begin
 			set @fact = @fact * @n
 			set @n -= 1
@@ -55,6 +55,39 @@ insert into holiday values
 ('2024-12-25','Christmas')
 
 select * from holiday
+	
 
-create or alter trigger trigger_manupulation
+create or alter trigger holiday_resitrict_trigger
+on emp
+instead of delete, insert, update
+as
+begin
+  declare @holiday_date date
+  declare @holiday_name nvarchar(25)
+  declare @holiday_count int
 
+  -- Check if today's date exists in the Holiday table
+  select top 1 @holiday_date = holiday_date, @holiday_name = holiday_name
+  from holiday
+  where holiday_date = convert(date, getdate()) -- use getdate() for current date
+
+  --counting if any holiday matches with current date then
+  select @holiday_count = count(*) from holiday
+  where holiday_date = convert(date, getdate())
+
+  -- If a holiday is found, raise an error message
+  if (@holiday_count > 0)
+  begin
+    raiserror ('Due to %s you cannot manipulate data',16,1, @holiday_name)
+  end
+end
+
+select * from emp
+insert into emp
+values (1001, 'John Doe', 'Manager', 5000,'2024-03-25',6000,null,10)
+
+update Emp set Ename = 'Steve' where Empno = 7369
+
+	 
+
+	 
