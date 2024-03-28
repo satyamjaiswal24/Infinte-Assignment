@@ -43,12 +43,12 @@ use Corporate
 
 	  update Employee set sal = sal * 1.15
 	  where empno = 2
-
-
+	  commit
 	--c. Delete first row
 	  delete from Employee where empno = 1
+	  rollback
 
-	  commit
+	  
 
 	--5.   Create a user defined function calculate Bonus for all employees of a  given job using 	following conditions
 	--a.   For Deptno 10 employees 15% of sal as bonus.
